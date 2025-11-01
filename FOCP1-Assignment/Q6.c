@@ -2,7 +2,7 @@
 
 int main() {
     int choice;
-    printf("1.Binary to Decimal\n2.Decimal to Binary\nEnter choice: ");
+    printf("1 binary to decimal\n2 decimal to dinary\nEnter choice: ");
     scanf("%d", &choice);
 
     if (choice == 1) {
@@ -15,23 +15,23 @@ int main() {
             a=a/10;
             c=c*2;
         }
-        printf("Decimal = %d\n",b);
+        printf("decimal= %d\n",b);
     } 
     else if (choice == 2) {
         int a,b[20],i=0;
-        printf("Enter decimal: ");
-        scanf("%d", &num);
-        while (num > 0) {
-            bin[i++] = num % 2;
-            num num/2;
+        printf("enter decimal: ");
+        scanf("%d",&a);
+        while (a>0) {
+            b[i++]=a % 2;
+            a=a/2;
         }
-        printf("Binary = ");
-        for (int j = i - 1; j >= 0; j--)
-            printf("%d", bin[j]);
+        printf("binary= ");
+        for (int j=i-1;j>=0;j--)
+            printf("%d",b[j]);
         printf("\n");
     } 
     else
-        printf("Invalid choice!\n");
+        printf("invalid choice\n");
 
     return 0;
 }
