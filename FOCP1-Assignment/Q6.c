@@ -2,7 +2,7 @@
 
 int main() {
     int choice;
-    printf("1 binary to decimal\n2 decimal to dinary\nEnter choice: ");
+    printf("1 binary to decimal\n2 decimal to binary\nEnter choice: ");
     scanf("%d", &choice);
 
     if (choice == 1) {
